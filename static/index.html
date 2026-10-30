@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Relate Model Picker</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark">RM</span>
+      <div>
+        <h1>Relate Model Picker</h1>
+        <p>Live catalog, routing inspector, and invocation telemetry</p>
+      </div>
+    </div>
+    <div class="toolbar">
+      <label class="token-field">
+        <span>Private token</span>
+        <input id="tokenInput" type="password" placeholder="Bearer token for telemetry" autocomplete="off" />
+      </label>
+      <button id="saveToken" class="btn">Save</button>
+      <button id="refreshBtn" class="btn ghost">Refresh</button>
+    </div>
+  </header>
+
+  <main id="main" class="layout">
+    <section class="hero card">
+      <div>
+        <h2>Versioned live catalog</h2>
+        <p id="catalogMeta">Loading catalog…</p>
+      </div>
+      <div class="stats" id="topStats"></div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Catalog explorer</h2>
+        <div class="filters">
+          <input id="searchInput" type="search" placeholder="Search models, providers, capabilities…" />
+          <select id="providerFilter"><option value="">All providers</option></select>
+          <select id="billingFilter">
+            <option value="">All billing</option>
+            <option value="free">Free</option>
+            <option value="subscription">Subscription</option>
+            <option value="metered">Metered</option>
+          </select>
+          <select id="capabilityFilter">
+            <option value="">All capabilities</option>
+            <option value="text">Text</option>
+            <option value="tools">Tools</option>
+            <option value="reasoning">Reasoning</option>
+            <option value="vision">Vision</option>
+          </select>
+          <select id="sortSelect">
+            <option value="id">Sort: ID</option>
+            <option value="provider">Sort: Provider</option>
+            <option value="-input_usd_per_million">Sort: Input price desc</option>
+            <option value="input_usd_per_million">Sort: Input price asc</option>
+            <option value="-output_usd_per_million">Sort: Output price desc</option>
+            <option value="context">Sort: Context</option>
+          </select>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="modelTable">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Provider / pool</th>
+              <th>Billing</th>
+              <th>Capabilities</th>
+              <th>Context</th>
+              <th>Input $/M</th>
+              <th>Output $/M</th>
+              <th>Cache read $/M</th>
+              <th>Compare</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="empty" id="catalogEmpty" hidden>No models match the current filters.</div>
+    </section>
+
+    <section class="grid-2">
+      <section class="card">
+        <div class="section-head">
+          <h2>Side-by-side comparison</h2>
+          <button id="clearCompare" class="btn ghost">Clear</button>
+        </div>
+        <div id="compareGrid" class="compare-grid"></div>
+      </section>
+      <section class="card">
+        <h2>Model detail</h2>
+        <div id="detailPanel" class="detail-panel">Select a model row to inspect provenance and limits.</div>
+      </section>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Routing and skill decision inspector</h2>
+        <span class="muted" id="routingMeta"></span>
+      </div>
+      <div id="routingCases" class="routing-cases"></div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Telemetry explorer</h2>
+        <span class="muted" id="telemetryMeta"></span>
+      </div>
+      <div class="stats" id="telemetryStats"></div>
+      <div class="charts">
+        <div>
+          <h3>Calls by model</h3>
+          <div id="modelBars" class="bars"></div>
+        </div>
+        <div>
+          <h3>Calls by provider</h3>
+          <div id="providerBars" class="bars"></div>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="telemetryTable">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Model used</th>
+              <th>Provider</th>
+              <th>Task</th>
+              <th>Wall ms</th>
+              <th>Input</th>
+              <th>Output</th>
+              <th>Cache read</th>
+              <th>Cost USD</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Refresh health</h2>
+      <pre id="refreshPanel" class="json-panel"></pre>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
+PY

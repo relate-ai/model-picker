@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at_utc": "2026-10-30T05:00:00+00:00",
+  "catalog_sha256": "1df0ed5bfa13a38df6c936cc520f357908462ca6231b03c9875e3180be22c518",
+  "case_count": 19,
+  "cases": [
+    {
+      "case_id": "C01_exact_regex_search",
+      "task_class": "deterministic",
+      "execution_mode": "DRY_RUN",
+      "decision": "L1 Python",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Exact/regex catalog search handled by deterministic indexed lookup; no LLM."
+    },
+    {
+      "case_id": "C02_json_schema_validation",
+      "task_class": "deterministic",
+      "execution_mode": "DRY_RUN",
+      "decision": "L1 Python",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "JSON/schema validation handled by deterministic validator; no LLM."
+    },
+    {
+      "case_id": "C03_arithmetic_pricing",
+      "task_class": "deterministic",
+      "execution_mode": "DRY_RUN",
+      "decision": "L1 Python",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Decimal-safe pricing arithmetic handled by Python; no LLM."
+    },
+    {
+      "case_id": "C04_csv_aggregation",
+      "task_class": "deterministic",
+      "execution_mode": "DRY_RUN",
+      "decision": "L1 Python",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "CSV aggregation handled by deterministic script; no LLM."
+    },
+    {
+      "case_id": "C05_bounded_intent_classification",
+      "task_class": "classification",
+      "execution_mode": "DRY_RUN",
+      "decision": "L2 System-One",
+      "chosen_model": "opencode/beam-free",
+      "rejected": [
+        "openrouter/liquid/lfm-2.5-2.6b:free"
+      ],
+      "estimated_usd": "0",
+      "summary": "Bounded classification routed to qualified System-One when available."
+    },
+    {
+      "case_id": "C06_ambiguous_tool_selection",
+      "task_class": "agentic",
+      "execution_mode": "DRY_RUN",
+      "decision": "L3 generative",
+      "chosen_model": "openrouter/liquid/lfm-2.5-2.6b:free",
+      "rejected": [
+        "opencode/beam-free"
+      ],
+      "estimated_usd": "0",
+      "summary": "Ambiguous tool selection requires generative model with tool capability."
+    },
+    {
+      "case_id": "C07_cited_document_answer",
+      "task_class": "reasoning",
+      "execution_mode": "DRY_RUN",
+      "decision": "L3 generative",
+      "chosen_model": "openrouter/liquid/lfm-2.5-2.6b:free",
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Cited answer requires generative synthesis over retrieved evidence."
+    },
+    {
+      "case_id": "C08_fresh_sourced_research",
+      "task_class": "research",
+      "execution_mode": "DRY_RUN",
+      "decision": "L3 generative",
+      "chosen_model": "openrouter/liquid/lfm-2.5-2.6b:free",
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Fresh research uses generative model plus external sources."
+    },
+    {
+      "case_id": "C09_coding_debugging",
+      "task_class": "coding",
+      "execution_mode": "REAL",
+      "decision": "L3 generative",
+      "chosen_model": "openrouter/liquid/lfm-2.5-2.6b:free",
+      "rejected": [
+        "openrouter/thinkingmachines/inkling-small:free"
+      ],
+      "estimated_usd": "0",
+      "summary": "Real relate-run completed; contract wc_9b1586ab74987a2b verified."
+    },
+    {
+      "case_id": "C10_high_quality_webpage",
+      "task_class": "coding",
+      "execution_mode": "REAL",
+      "decision": "L3 generative",
+      "chosen_model": "openrouter/thinkingmachines/inkling-small:free",
+      "rejected": [
+        "openrouter/liquid/lfm-2.5-2.6b:free"
+      ],
+      "estimated_usd": "0",
+      "summary": "Real relate-run completed after rate-limit fallback; contract wc_d16af74f3b19eaa0 verified."
+    },
+    {
+      "case_id": "C11_extraction_systemone_synthesis",
+      "task_class": "coding",
+      "execution_mode": "REAL",
+      "decision": "L0/L2/L3",
+      "chosen_model": "openrouter/liquid/lfm-2.5-2.6b:free",
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Real relate-run completed; contract wc_197de6f83b2fab29 verified."
+    },
+    {
+      "case_id": "C12_multi_track_deploy_mission",
+      "task_class": "agentic",
+      "execution_mode": "DRY_RUN",
+      "decision": "L3 generative",
+      "chosen_model": "openrouter/liquid/lfm-2.5-2.6b:free",
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Mission orchestration represented as dry-run selection to avoid unbounded cost."
+    },
+    {
+      "case_id": "N01_unqualified_model",
+      "task_class": "coding",
+      "execution_mode": "NEGATIVE",
+      "decision": "STOP",
+      "chosen_model": null,
+      "rejected": [
+        "unqualified-model"
+      ],
+      "estimated_usd": "0",
+      "summary": "Unqualified model rejected by hard gates."
+    },
+    {
+      "case_id": "N02_stale_catalog",
+      "task_class": "coding",
+      "execution_mode": "NEGATIVE",
+      "decision": "STOP",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Stale catalog candidate cannot replace last known good."
+    },
+    {
+      "case_id": "N03_missing_tool",
+      "task_class": "coding",
+      "execution_mode": "NEGATIVE",
+      "decision": "STOP",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Missing required tool causes STOP."
+    },
+    {
+      "case_id": "N04_wrong_provider_binding",
+      "task_class": "coding",
+      "execution_mode": "NEGATIVE",
+      "decision": "STOP",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "Wrong actual provider binding rejected."
+    },
+    {
+      "case_id": "N05_timeout_quota_exhaustion",
+      "task_class": "coding",
+      "execution_mode": "NEGATIVE",
+      "decision": "STOP",
+      "chosen_model": null,
+      "rejected": [
+        "openrouter/liquid/lfm-2.5-2.6b:free"
+      ],
+      "estimated_usd": "0",
+      "summary": "Rate-limited route quarantined; fallback route used."
+    },
+    {
+      "case_id": "N06_denied_spend",
+      "task_class": "coding",
+      "execution_mode": "NEGATIVE",
+      "decision": "STOP",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "1.01",
+      "summary": "Denied spend above cap rejected."
+    },
+    {
+      "case_id": "N07_excessive_parallelism",
+      "task_class": "coding",
+      "execution_mode": "NEGATIVE",
+      "decision": "STOP",
+      "chosen_model": null,
+      "rejected": [],
+      "estimated_usd": "0",
+      "summary": "More than 3x2 workers rejected by scheduler."
+    }
+  ]
+}
