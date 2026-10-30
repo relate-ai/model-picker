@@ -36,3 +36,22 @@ Fix: `_per_m()` now returns the host value directly because `opencode models --v
 
 - Playwright repository: https://github.com/relate-ai/model-picker-playwright
 - All checks passed, including mobile overflow.
+
+## Visual verification
+
+Playwright repository: https://github.com/relate-ai/model-picker-playwright
+
+Verified:
+- desktop and mobile rendering
+- 213 catalog rows
+- every provider, billing, and capability filter against API counts
+- search for every model id
+- all sort options
+- model detail for sampled models across providers
+- compare and clear compare
+- 19 routing cases
+- telemetry locked without token and unlocked with token
+- telemetry row presence
+- mobile horizontal overflow
+
+Result: ALL VISUAL CHECKS PASSED.
