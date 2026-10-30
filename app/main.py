@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, Header, HTTPException, Query
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -274,14 +274,14 @@ def routing_matrix() -> dict[str, Any]:
 
 
 @app.get("/api/telemetry/events")
-def telemetry_events(authorization: Optional[str] = None, limit: int = Query(default=500, ge=1, le=5000)) -> dict[str, Any]:
+def telemetry_events(authorization: Optional[str] = Header(default=None), limit: int = Query(default=500, ge=1, le=5000)) -> dict[str, Any]:
     _require_auth(authorization)
     events = _load_telemetry_events()
     return {"count": len(events), "events": events[:limit]}
 
 
 @app.get("/api/telemetry/summary")
-def telemetry_summary(authorization: Optional[str] = None) -> dict[str, Any]:
+def telemetry_summary(authorization: Optional[str] = Header(default=None)) -> dict[str, Any]:
     _require_auth(authorization)
     events = _load_telemetry_events()
     by_model: dict[str, dict[str, Any]] = {}
