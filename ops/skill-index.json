@@ -1,0 +1,775 @@
+{
+  "catalog_sha256": "a5b5dfed2f272abf3793474ad00be9b909286e633bf0b2d16157faccc4454373",
+  "generated_at_utc": "2026-10-29T23:23:48.806925+00:00",
+  "schema_version": "1.0.0",
+  "skills": [
+    {
+      "description": "Comprehensive REST API design review with automated linting, breaking-change detection, and design scorecards. Catches inconsistent conventions, missing versioning, and design smells before APIs ship. Use when reviewing a PR that adds or changes API endpoints, auditing an existing API for v2 migration, or establishing API standards for a team.",
+      "id": "api-design-reviewer",
+      "name": "api-design-reviewer",
+      "path": "/home/opencode/.config/opencode/skills/api-design-reviewer/SKILL.md",
+      "sha256": "a4e61a67981d7cab02f479f959b9e83d032e705c17b72e763d07ef9a3247bf54",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when designing REST or GraphQL APIs, creating OpenAPI specifications, or planning API architecture. Invoke for resource modeling, versioning strategies, pagination patterns, error handling standards.",
+      "id": "api-designer",
+      "name": "api-designer",
+      "path": "/home/opencode/.config/opencode/skills/api-designer/SKILL.md",
+      "sha256": "75a1d0df12641ef02803a1c8dba1e079f0b4cd7b238dd53ab4c257fad5b49e93",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when the user asks to generate API tests, create integration test suites, test REST endpoints, or build contract tests.",
+      "id": "api-test-suite-builder",
+      "name": "api-test-suite-builder",
+      "path": "/home/opencode/.config/opencode/skills/api-test-suite-builder/SKILL.md",
+      "sha256": "a0db3fd9004317097c1c9c7ef7da6276a98d205a1c2af79fbbddd72fab976d42",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when designing new high-level system architecture, reviewing existing designs, or making architectural decisions. Invoke to create architecture diagrams, write Architecture Decision Records (ADRs), evaluate technology trade-offs, design component interactions, and plan for scalability. Use for system design, architecture review, microservices structuring, ADR authoring, scalability planning, and infrastructure pattern selection \u2014 distinct from code-level design patterns or database-only design tasks.",
+      "id": "architecture-designer",
+      "name": "architecture-designer",
+      "path": "/home/opencode/.config/opencode/skills/architecture-designer/SKILL.md",
+      "sha256": "5235b031e8fadacf01f39ad9db7b8d5ec9d6f83460ebcef78da95d31c9f36276",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+      "id": "brainstorming",
+      "name": "brainstorming",
+      "path": "/home/opencode/.config/opencode/skills/brainstorming/SKILL.md",
+      "sha256": "e14914605f640e0841758e45d0ab2a53243b59b921f929e47921c99668f2e61d",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Produce consistent, auditable release notes from Conventional Commits. Separates commit parsing, semantic-bump logic, and changelog rendering for automated releases with editorial control. Use when cutting a release, generating CHANGELOG.md from git history, computing the next semantic version from commits, automating release notes in CI, or planning a hotfix/rollback. Examples: 'generate the changelog for v1.4.0', 'what version bump do these commits require', 'we need an emergency hotfix process'.",
+      "id": "changelog-generator",
+      "name": "changelog-generator",
+      "path": "/home/opencode/.config/opencode/skills/changelog-generator/SKILL.md",
+      "sha256": "0866b458e0eff49b95328452a32e326a866b661bbdd3b2f4ac2d3f9b9f3ddc25",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test runners in CI, or establish deployment strategies.",
+      "id": "ci-cd-and-automation",
+      "name": "ci-cd-and-automation",
+      "path": "/home/opencode/.config/opencode/skills/ci-cd-and-automation/SKILL.md",
+      "sha256": "a6ed8ed56456b01ff8314c44eefc69897d9905ae4e06bb2b7036286efb79b5f0",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Generate pragmatic CI/CD pipelines from detected project stack signals \u2014 fast baseline generation, repeatable checks, environment-aware deployment stages. Use when setting up CI for a new project, refactoring existing pipelines, or standardizing deployment workflows across multiple repos.",
+      "id": "ci-cd-pipeline-builder",
+      "name": "ci-cd-pipeline-builder",
+      "path": "/home/opencode/.config/opencode/skills/ci-cd-pipeline-builder/SKILL.md",
+      "sha256": "b9628224a9fe77caca4aedda49a72938147000ab275da92ebccf190c3ba8f161",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Generates, formats, and validates technical documentation \u2014 including docstrings, OpenAPI/Swagger specs, JSDoc annotations, doc portals, and user guides. Use when adding docstrings to functions or classes, creating API documentation, building documentation sites, or writing tutorials and user guides. Invoke for OpenAPI/Swagger specs, JSDoc, doc portals, getting started guides.",
+      "id": "code-documenter",
+      "name": "code-documenter",
+      "path": "/home/opencode/.config/opencode/skills/code-documenter/SKILL.md",
+      "sha256": "9db40547fcaf27844d3b2ca80737bd7e5b94da99094d7f7ca2b27b540b2686f2",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch.",
+      "id": "code-review-and-quality",
+      "name": "code-review-and-quality",
+      "path": "/home/opencode/.config/opencode/skills/code-review-and-quality/SKILL.md",
+      "sha256": "6d7c7cb43e8eb6727ab72b3baa570d8e8c00f484392cfd07acf4550fed2b6838",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Analyzes code diffs and files to identify bugs, security vulnerabilities (SQL injection, XSS, insecure deserialization), code smells, N+1 queries, naming issues, and architectural concerns, then produces a structured review report with prioritized, actionable feedback. Use when reviewing pull requests, conducting code quality audits, identifying refactoring opportunities, or checking for security issues. Invoke for PR reviews, code quality checks, refactoring suggestions, review code, code quality. Complements specialized skills (security-reviewer, test-master) by providing broad-scope review across correctness, performance, maintainability, and test coverage in a single pass.",
+      "id": "code-reviewer",
+      "name": "code-reviewer",
+      "path": "/home/opencode/.config/opencode/skills/code-reviewer/SKILL.md",
+      "sha256": "8f0ddb7d90178b6986f8d597ab0bc93ec01adb044bd27b75e1682b06902dae93",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "id": "codebase-design",
+      "name": "codebase-design",
+      "path": "/home/opencode/.config/opencode/skills/codebase-design/SKILL.md",
+      "sha256": "a8d50abac5a4018f60e1d911d4b6f4e36454ca14d6c390c0695a578c7de65dad",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when the user asks to design database schemas, plan data migrations, optimize queries, choose between SQL and NoSQL, or model data relationships.",
+      "id": "database-designer",
+      "name": "database-designer",
+      "path": "/home/opencode/.config/opencode/skills/database-designer/SKILL.md",
+      "sha256": "3729790a4e29e45ea0e9cb0bbb220d2162fea0e954d32f2abf8728aa8ef41ad1",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Optimizes database queries and improves performance across PostgreSQL and MySQL systems. Use when investigating slow queries, analyzing execution plans, or optimizing database performance. Invoke for index design, query rewrites, configuration tuning, partitioning strategies, lock contention resolution.",
+      "id": "database-optimizer",
+      "name": "database-optimizer",
+      "path": "/home/opencode/.config/opencode/skills/database-optimizer/SKILL.md",
+      "sha256": "b581ed9eadeced125c26fee4ca204a48c5b183da00448fb2eeb1362e5741ccab",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Parses error messages, traces execution flow through stack traces, correlates log entries to identify failure points, and applies systematic hypothesis-driven methodology to isolate and resolve bugs. Use when investigating errors, analyzing stack traces, finding root causes of unexpected behavior, troubleshooting crashes, or performing log analysis, error investigation, or root cause analysis.",
+      "id": "debugging-wizard",
+      "name": "debugging-wizard",
+      "path": "/home/opencode/.config/opencode/skills/debugging-wizard/SKILL.md",
+      "sha256": "82c442c0a4f87785adc0a5ad9f9968d7ceb83e03f937151f19f362c76267e2e7",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Audit and manage dependencies across multi-language projects. Identifies vulnerabilities, license conflicts, transitive dependency risks, and safe-upgrade paths. Use when auditing third-party packages before release, investigating a CVE, planning a major version bump, or running a license-compliance review. Examples: 'audit our npm dependencies', 'do we have GPL contamination', 'plan the upgrade to React 19'.",
+      "id": "dependency-auditor",
+      "name": "dependency-auditor",
+      "path": "/home/opencode/.config/opencode/skills/dependency-auditor/SKILL.md",
+      "sha256": "4bde5bd43d14b39a9c282f1ab74b202d102b070b99a5083724e84526bc5e2f0a",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when deciding whether to maintain or sunset existing code.",
+      "id": "deprecation-and-migration",
+      "name": "deprecation-and-migration",
+      "path": "/home/opencode/.config/opencode/skills/deprecation-and-migration/SKILL.md",
+      "sha256": "bf2d9b4e3bc635b32e8de70b0ab41e4395d7b585e6474347c53ce89d45fbdb75",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when deciding whether and how to embed System One models in software for routing, classification, scoring, verification, skill selection, model selection, confidence gates, or bounded escalation.",
+      "id": "designing-system-one-decisions",
+      "name": "designing-system-one-decisions",
+      "path": "/data/working/opencode/relate-skills/sources/relate-integrated-b8eb5ee2913d9b3e/designing-system-one-decisions/SKILL.md",
+      "sha256": "5b70e57b20654aed32dfe8da9fd974956f672b955e672692912b3334e7f67588",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "id": "diagnosing-bugs",
+      "name": "diagnosing-bugs",
+      "path": "/home/opencode/.config/opencode/skills/diagnosing-bugs/SKILL.md",
+      "sha256": "7a0779480f323a66d109404646bcc1a14bf0232b45b3e3ea93b652a035718acb",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+      "id": "dispatching-parallel-agents",
+      "name": "dispatching-parallel-agents",
+      "path": "/home/opencode/.config/opencode/skills/dispatching-parallel-agents/SKILL.md",
+      "sha256": "f0df13f584049059cc5619f90061405b89dcc6e28ab3f2a8517d27d99c7a46a6",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Records decisions and documentation. Use when making architectural decisions, changing public APIs, shipping features, or when you need to record context that future engineers and agents will need to understand the codebase.",
+      "id": "documentation-and-adrs",
+      "name": "documentation-and-adrs",
+      "path": "/home/opencode/.config/opencode/skills/documentation-and-adrs/SKILL.md",
+      "sha256": "7fed35f9c5b95d8e3623ad24d78d209c3267ab62d7157fc03954c76a7e58adf4",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.",
+      "id": "domain-modeling",
+      "name": "domain-modeling",
+      "path": "/home/opencode/.config/opencode/skills/domain-modeling/SKILL.md",
+      "sha256": "152e2c97239affb12a60c5f4a7e74ab546a49ae169688c81f4e2ccc42dafa579",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Subjects every non-trivial decision to a fresh-context adversarial review before it stands. Use when correctness matters more than speed, when working in unfamiliar code, when stakes are high (production, security-sensitive logic, irreversible operations), or any time a confident output would be cheaper to verify now than to debug later.",
+      "id": "doubt-driven-development",
+      "name": "doubt-driven-development",
+      "path": "/home/opencode/.config/opencode/skills/doubt-driven-development/SKILL.md",
+      "sha256": "59aef769adeae40aad67a1d54474aaf914ea7ecdfc2a4752a54840a8d29f80de",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Manage environment-variable hygiene and secrets safety across local development and production. Practical auditing, drift awareness, rotation readiness. Use when auditing .env files for committed secrets, planning a credential rotation, debugging missing-env-var production incidents, or hardening a new project against secrets leakage.",
+      "id": "env-secrets-manager",
+      "name": "env-secrets-manager",
+      "path": "/home/opencode/.config/opencode/skills/env-secrets-manager/SKILL.md",
+      "sha256": "6724d5bd32506212977fe6e78be754d97458e16ae164fbc6adb69e30d31caaee",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when the user asks to evaluate, assess, or check if a GitHub repository is trustworthy, well-maintained, or high quality. Trigger phrases include \"evaluate repo\", \"check if repo is trustworthy\", \"assess GitHub project\", \"is this repo maintained\", \"repo quality\", \"should I use this library\", \"trust score\".",
+      "id": "evaluate-github-repo",
+      "name": "evaluate-github-repo",
+      "path": "/home/opencode/.config/opencode/skills/evaluate-github-repo/SKILL.md",
+      "sha256": "22e8f3123ab556c72a0ac9a34e0bcdba1b60c7b60dad95450821384310c542b5",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
+      "id": "executing-plans",
+      "name": "executing-plans",
+      "path": "/home/opencode/.config/opencode/skills/executing-plans/SKILL.md",
+      "sha256": "b357c2a2e5bf24adf237b5d4a83cacd828f07b886d0873ad91546aa3c99905c9",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Conducts structured requirements workshops to produce feature specifications, user stories, EARS-format functional requirements, acceptance criteria, and implementation checklists. Use when defining new features, gathering requirements, or writing specifications. Invoke for feature definition, requirements gathering, user stories, EARS format specs, PRDs, acceptance criteria, or requirement matrices.",
+      "id": "feature-forge",
+      "name": "feature-forge",
+      "path": "/home/opencode/.config/opencode/skills/feature-forge/SKILL.md",
+      "sha256": "3c8b8c363767177e39262b229be0285779816ed251c8bd658073efc3cda0f1c6",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work - guides completion of development work by presenting structured options for merge, PR, or cleanup",
+      "id": "finishing-a-development-branch",
+      "name": "finishing-a-development-branch",
+      "path": "/home/opencode/.config/opencode/skills/finishing-a-development-branch/SKILL.md",
+      "sha256": "e6d4a812de900d33c6eacfb40747f99427f25c304a7b7099120f9373b115a47f",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when the user asks to fix, debug, or make a specific feature/module/area work end-to-end. Triggers: 'make X work', 'fix the Y feature', 'the Z module is broken', 'focus on [area]'. Not for quick single-bug fixes \u2014 this is for systematic deep-dive repair across all files and dependencies.",
+      "id": "focused-fix",
+      "name": "focused-fix",
+      "path": "/home/opencode/.config/opencode/skills/focused-fix/SKILL.md",
+      "sha256": "84f2c465a23aa02c2b57269628254d8c35858ba0d5bd113daed38c7446bfe016",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Builds security-focused full-stack web applications by implementing integrated frontend and backend components with layered security at every level. Covers the complete stack from database to UI, enforcing auth, input validation, output encoding, and parameterized queries across all layers. Use when implementing features across frontend and backend, building REST APIs with corresponding UI, connecting frontend components to backend endpoints, creating end-to-end data flows from database to UI, or implementing CRUD operations with UI forms. Distinct from frontend-only, backend-only, or API-only skills in that it simultaneously addresses all three perspectives\u2014Frontend, Backend, and Security\u2014within a single implementation workflow. Invoke for full-stack feature work, web app development, authenticated API routes with views, microservices, real-time features, monorepo architecture, or technology selection decisions.",
+      "id": "fullstack-guardian",
+      "name": "fullstack-guardian",
+      "path": "/home/opencode/.config/opencode/skills/fullstack-guardian/SKILL.md",
+      "sha256": "22a1c39c86be63fafce6e2aaa5b667a588de346c359dbb67231e75d5c0fe990c",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work across multiple parallel streams.",
+      "id": "git-workflow-and-versioning",
+      "name": "git-workflow-and-versioning",
+      "path": "/home/opencode/.config/opencode/skills/git-workflow-and-versioning/SKILL.md",
+      "sha256": "b1a84eac7a47f6e2985a27733137d862fcdeb552eefe2bd17629e1f3c20e0e97",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Run parallel feature work safely with Git worktrees. Standardizes branch isolation, port allocation, environment sync, and cleanup so each worktree behaves like an independent local app. Optimized for multi-agent workflows where each agent or terminal session owns one worktree. Use when running multiple feature branches simultaneously, isolating experimental work, or coordinating multi-agent development across the same repo.",
+      "id": "git-worktree-manager",
+      "name": "git-worktree-manager",
+      "path": "/home/opencode/.config/opencode/skills/git-worktree-manager/SKILL.md",
+      "sha256": "c972e7576a18df4180b92f83af3d5e375814a8d6133267acce44ec89709f4dac",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Delivers changes incrementally. Use when implementing any feature or change that touches more than one file. Use when you're about to write a large amount of code at once, or when a task feels too big to land in one step.",
+      "id": "incremental-implementation",
+      "name": "incremental-implementation",
+      "path": "/home/opencode/.config/opencode/skills/incremental-implementation/SKILL.md",
+      "sha256": "960f2ed08ccdd51527c347d29d2d00c80edb9992e95d67030d8a289ba04eed4e",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when writing, reviewing, or committing code to enforce Karpathy's 4 coding principles \u2014 surface assumptions before coding, keep it simple, make surgical changes, define verifiable goals. Triggers on \"review my diff\", \"check complexity\", \"am I overcomplicating this\", \"karpathy check\", \"before I commit\", or any code quality concern where the LLM might be overcoding.",
+      "id": "karpathy-coder",
+      "name": "karpathy-coder",
+      "path": "/home/opencode/.config/opencode/skills/karpathy-coder/SKILL.md",
+      "sha256": "79a886c5beef75ed948b0e7bf1c6babbb0ee8566fdea7cf021b894cda3b87588",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web.",
+      "id": "last30days",
+      "name": "last30days",
+      "path": "/home/opencode/.config/opencode/skills/last30days/SKILL.md",
+      "sha256": "a687ec78f864a85410d063fc248e64a8eb6103589195ef35a71eca686219616a",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Navigate, manage, and optimize monorepos. Covers Turborepo, Nx, pnpm workspaces, and Lerna. Cross-package impact analysis, selective builds/tests on affected packages, remote caching, dependency graph visualization, and structured multi-repo to monorepo migrations. Use when setting up a new monorepo, optimizing CI for a large workspace, debugging cross-package dependency issues, or planning a multi-repo consolidation.",
+      "id": "monorepo-navigator",
+      "name": "monorepo-navigator",
+      "path": "/home/opencode/.config/opencode/skills/monorepo-navigator/SKILL.md",
+      "sha256": "19184d57f8eea27ed974b0e7eac2033b366b9cdacb6454bb9a1977314b182335",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data.",
+      "id": "observability-and-instrumentation",
+      "name": "observability-and-instrumentation",
+      "path": "/home/opencode/.config/opencode/skills/observability-and-instrumentation/SKILL.md",
+      "sha256": "40c59a0c3ba28f5697600add521e38f81f880f986317628cdc0df9bdb8acf126",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Design production-ready observability strategies combining metrics, logs, and traces. Includes SLI/SLO design, golden-signals monitoring, alert optimization. Use when adding observability to a new service, refactoring alerting that is too noisy, or designing an SLO program before scaling production load.",
+      "id": "observability-designer",
+      "name": "observability-designer",
+      "path": "/home/opencode/.config/opencode/skills/observability-designer/SKILL.md",
+      "sha256": "70ab54164e3cb58f30f4f4e1500bd54361c67f6ecbde954b13596dc2902fe2ac",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Systematic performance profiling for Node.js, Python, and Go applications. Identifies CPU, memory, and I/O bottlenecks, generates flamegraphs, analyzes bundle sizes, optimizes database queries, runs load tests with k6 and Artillery. Always measures before and after. Use when investigating a slow endpoint, planning a performance budget, or hunting a memory leak in production.",
+      "id": "performance-profiler",
+      "name": "performance-profiler",
+      "path": "/home/opencode/.config/opencode/skills/performance-profiler/SKILL.md",
+      "sha256": "953948b591db0afc4dac8ff4e84d65a2c34fa62b7b579e3ba6cf3398e79ec18b",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
+      "id": "planning-and-task-breakdown",
+      "name": "planning-and-task-breakdown",
+      "path": "/home/opencode/.config/opencode/skills/planning-and-task-breakdown/SKILL.md",
+      "sha256": "8cc81534485e2b3171c5036bb273984d4c2cb93efd526c63ff8a180a5516a224",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when writing E2E tests with Playwright, setting up test infrastructure, or debugging flaky browser tests. Invoke to write test scripts, create page objects, configure test fixtures, set up reporters, add CI integration, implement API mocking, or perform visual regression testing. Trigger terms: Playwright, E2E test, end-to-end, browser testing, automation, UI testing, visual testing, Page Object Model, test flakiness.",
+      "id": "playwright-expert",
+      "name": "playwright-expert",
+      "path": "/home/opencode/.config/opencode/skills/playwright-expert/SKILL.md",
+      "sha256": "d6c5c04e570659a902e7c212067116131743e588af16406672fab58f0f62d8e1",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when the user asks to review pull requests, analyze code changes, check for security issues in PRs, or assess code quality of diffs.",
+      "id": "pr-review-expert",
+      "name": "pr-review-expert",
+      "path": "/home/opencode/.config/opencode/skills/pr-review-expert/SKILL.md",
+      "sha256": "548a4d03c274203d803abb07a7a318a484ccad8191594480374de658592c6b49",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when building Python 3.11+ applications requiring type safety, async programming, or robust error handling. Generates type-annotated Python code, configures mypy in strict mode, writes pytest test suites with fixtures and mocking, and validates code with black and ruff. Invoke for type hints, async/await patterns, dataclasses, dependency injection, logging configuration, and structured error handling.",
+      "id": "python-pro",
+      "name": "python-pro",
+      "path": "/home/opencode/.config/opencode/skills/python-pro/SKILL.md",
+      "sha256": "83acbb761bc372bb8f3df377a4a8f5c3bfb0b95e3d38eebd2e9ee320be255859",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when building React 18+ applications in .jsx or .tsx files, Next.js App Router projects, or create-react-app setups. Creates components, implements custom hooks, debugs rendering issues, migrates class components to functional, and implements state management. Invoke for Server Components, Suspense boundaries, useActionState forms, performance optimization, or React 19 features.",
+      "id": "react-expert",
+      "name": "react-expert",
+      "path": "/home/opencode/.config/opencode/skills/react-expert/SKILL.md",
+      "sha256": "542b344c6b4c3b801255c77fe93c7685ff37a4a1c2d04ecaaa81f3f5aa15dc0a",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "id": "receiving-code-review",
+      "name": "receiving-code-review",
+      "path": "/home/opencode/.config/opencode/skills/receiving-code-review/SKILL.md",
+      "sha256": "647036bbdab7bf2317e14e079595e984c9030f64295e2b4c0fb57dbeb48f25dd",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when producing reports, research, analysis, or any document deliverable for the user. Creates structured output directories with traceable agent/session/timestamp hierarchy and maintains an INDEX.md for easy browsing and cleanup.",
+      "id": "relate-agent-output-organizer",
+      "name": "relate-agent-output-organizer",
+      "path": "/home/opencode/.config/opencode/skills/relate-agent-output-organizer/SKILL.md",
+      "sha256": "e23c73df95071127b607b5fc7b17a2fc2daa42be6df4a2e51e641501af2c8dec",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use before implementation, approval, merge, deployment, architecture decisions, or high-confidence claims when hidden assumptions, evidence quality, failure modes, and counterarguments must be challenged.",
+      "id": "relate-assumption-red-team",
+      "name": "relate-assumption-red-team",
+      "path": "/home/opencode/.config/opencode/skills/relate-assumption-red-team/SKILL.md",
+      "sha256": "da2ca1b2dbec32baca3189662a23fdda4d94ade6bae4d01903b552cf8c1a2e35",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Prompt engineering for BEAM, including bounded coding, document QA, semantic retrieval, contract audits, session verification, and recovery.",
+      "id": "relate-beam-worker",
+      "name": "relate-beam-worker",
+      "path": "/data/working/opencode/relate-skills/sources/relate-integrated-b8eb5ee2913d9b3e/relate-beam-worker/SKILL.md",
+      "sha256": "58ea4beddd2e7a69a038de8e8c9b81c8be16b51174438ecb052dfb011b5960f7",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Manage Coolify deployments via REST API. Use when tasks involve application deployment, server management, or infrastructure monitoring on Coolify.",
+      "id": "relate-coolify-api",
+      "name": "relate-coolify-api",
+      "path": "/home/opencode/.config/opencode/skills/relate-coolify-api/SKILL.md",
+      "sha256": "362e7af419aeab7dfdd44382025bf2267fe89b1ce621857b046d87e6e8aca6a5",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "RELATE - DeepSeek Cache Stability - techniques for maintaining prefix-cache stability across long sessions to minimise token costs. Use when working with DeepSeek models, MCP-heavy agents, or long-running agent workflows.",
+      "id": "relate-deepseek-cache-stability",
+      "name": "relate-deepseek-cache-stability",
+      "path": "/home/opencode/.config/opencode/skills/relate-deepseek-cache-stability/SKILL.md",
+      "sha256": "5004f479ac771b89d183a811689fcea18653525a65ac04ecf012933c9991452a",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Convert failed agents and fallback events into exact future improvements in the Relate SDLC orchestrator. Records failed agents, failure types, root cause hypotheses, creates instruction patches, output contract patches, acceptance test patches, and identifies next agent redesign targets. Use after fallback, rework, failed phase agent, or status ceiling event.",
+      "id": "relate-defect-retrospective",
+      "name": "relate-defect-retrospective",
+      "path": "/home/opencode/.config/opencode/skills/relate-defect-retrospective/SKILL.md",
+      "sha256": "8618809bc76fb2eb37ca335c82d59f3dc136f549fe86b026130ca5e5ed0883d0",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use before deployment, release, merge-to-main, production exposure, or PR approval when readiness must be verified across build, tests, config, secrets, rollback, and observability.",
+      "id": "relate-deployment-gate",
+      "name": "relate-deployment-gate",
+      "path": "/home/opencode/.config/opencode/skills/relate-deployment-gate/SKILL.md",
+      "sha256": "2954eb8d81a0804f3b2aca1659ec0b1ef598b5b037d3eeb54543d0261bddaee5",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use after implementation, release, migration, architecture change, or skill/agent update when documentation, ADRs, runbooks, changelogs, or handoff files must match actual behaviour.",
+      "id": "relate-documentation-sync",
+      "name": "relate-documentation-sync",
+      "path": "/home/opencode/.config/opencode/skills/relate-documentation-sync/SKILL.md",
+      "sha256": "58ed8bf90284d11ea7ea8688313d169ed967a6cdfc302cfb528ef279d2426010",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Govern fallback use, confidence loss, status ceilings, and defect tickets in the Relate SDLC orchestrator. Classifies failed subagent output, creates fallback contracts, requires fallback scorecards, records fallback events, applies status ceilings, and prevents fallback final approval without user waiver. Use when a phase agent fails and fallback is needed.",
+      "id": "relate-fallback-control",
+      "name": "relate-fallback-control",
+      "path": "/home/opencode/.config/opencode/skills/relate-fallback-control/SKILL.md",
+      "sha256": "a26bee71b0eec84a5d44332091c277505616b99fbb5184b0cd1fcbfba86e6e7a",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Prevent unsupported approval and enforce the Relate SDLC status taxonomy. Checks approval blockers, enforces 8-status taxonomy, requires evidence-linked final reports, prevents runtime claims without validation, and prevents approved status when configured verifier failed. Use before any final status is reported to the user.",
+      "id": "relate-final-report-gate",
+      "name": "relate-final-report-gate",
+      "path": "/home/opencode/.config/opencode/skills/relate-final-report-gate/SKILL.md",
+      "sha256": "043aaebf658049f93ea70936b1a30ddefede34f87dc6528cefc915d0faf7e204",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Manage GitHub repositories via CLI. Use when tasks involve repository management, issue tracking, pull requests, or GitHub API operations.",
+      "id": "relate-github-cli",
+      "name": "relate-github-cli",
+      "path": "/home/opencode/.config/opencode/skills/relate-github-cli/SKILL.md",
+      "sha256": "d217fcdd183c89553eec552991af1f32040a800255bd6261b83539b08351e9d9",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Manage Hostinger services via API. Use when tasks involve website management, VPS administration, or DNS configuration on Hostinger.",
+      "id": "relate-hostinger-api",
+      "name": "relate-hostinger-api",
+      "path": "/home/opencode/.config/opencode/skills/relate-hostinger-api/SKILL.md",
+      "sha256": "89dc31312c5d15db34a33953adb8623a3a5816f4617806ccbafb1182dad45567",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when code, config, deployment, skill, agent, API, schema, dependency, or documentation changes need blast-radius analysis before implementation, review, merge, or approval.",
+      "id": "relate-impact-analysis",
+      "name": "relate-impact-analysis",
+      "path": "/home/opencode/.config/opencode/skills/relate-impact-analysis/SKILL.md",
+      "sha256": "3fc3cc0df23762714948b587879692bcf73e6245f08211866241ed581f0b6631",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Manage Modal deployments via CLI. Use when tasks involve serverless function deployment, secret management, or compute resource management on Modal.",
+      "id": "relate-modal-cli",
+      "name": "relate-modal-cli",
+      "path": "/home/opencode/.config/opencode/skills/relate-modal-cli/SKILL.md",
+      "sha256": "e936f7299e1b7d247f8e1b4e4abed6b38570fcab8515708f2f137d7db5bf469d",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Select capable and sufficiently fast AI models for any task using cheapest qualified, free-only, or best-quality-with-budget strategies. Works across harnesses and providers; uses qualified evidence and budget-aware portfolio selection rather than fixed role/model tables.",
+      "id": "relate-model-optimizer",
+      "name": "relate-model-optimizer",
+      "path": "/data/working/opencode/relate-skills/sources/relate-integrated-b8eb5ee2913d9b3e/relate-model-optimizer/SKILL.md",
+      "sha256": "7a70e536909d8b9554ef5242ed9cb0cd0c97a7d5892ff66bed500c1f756d49d7",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Validate model routing readiness before Relate SDLC execution by checking configured model fields, phase-specific allowlists, OpenRouter catalog status, runtime model resolution, and OpenCode logs. Use before RT-07, after agent model changes, after OpenCode restart/reload, or after upstream provider failures.",
+      "id": "relate-model-preflight",
+      "name": "relate-model-preflight",
+      "path": "/home/opencode/.config/opencode/skills/relate-model-preflight/SKILL.md",
+      "sha256": "c2544212b1ce47e09f9a2f4f27cd2ffcd489ecf71c46978a2aa2b631e4746957",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Score every subagent output before use in the Relate SDLC orchestrator. Multi-dimensional scoring across contract compliance, completeness, evidence quality, format compliance, independence, usefulness to next phase, and risk created. Accept or reject outputs based on minimum thresholds. Use when grading any phase agent output before passing it to the next phase.",
+      "id": "relate-output-grading",
+      "name": "relate-output-grading",
+      "path": "/home/opencode/.config/opencode/skills/relate-output-grading/SKILL.md",
+      "sha256": "126fdea79ac9e313e1bd2eb852ddf6e866fe450c40ff29cc244aa4a257c35b85",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Require manifest, SHA256 hashes, acceptance matrix, and validation scope before package handoff in the Relate SDLC orchestrator. Produces or checks SHA256, validates zip integrity, classifies validation scope, and blocks completion when manifest, hash, or matrix is missing. Use before final package handoff or when validating a deliverable package.",
+      "id": "relate-package-integrity",
+      "name": "relate-package-integrity",
+      "path": "/home/opencode/.config/opencode/skills/relate-package-integrity/SKILL.md",
+      "sha256": "b8177a05316aac3c65009a2e51068d3ed4777435df64b2c2b2168472b9690709",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Score SDLC phase outputs and block advancement on invalid outputs. Validates non-empty output, detects tool errors, wrong format, wrong scope, checks required schema, scores contract compliance, and decides pass/revise/fail/block. Use when grading subagent output before phase advancement in the Relate SDLC orchestrator loop.",
+      "id": "relate-phase-gate",
+      "name": "relate-phase-gate",
+      "path": "/home/opencode/.config/opencode/skills/relate-phase-gate/SKILL.md",
+      "sha256": "a817f54f346cbc4f0a555ef7c5df6ef5cfee245e9ce8c19cd9bbfcaea8497039",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use after a task, sprint, incident, release, failed attempt, rework loop, or handoff when outcomes, defects, assumptions, root causes, risks, and reusable lessons must be captured.",
+      "id": "relate-retrospective",
+      "name": "relate-retrospective",
+      "path": "/home/opencode/.config/opencode/skills/relate-retrospective/SKILL.md",
+      "sha256": "d8b9e901a1e73b9847a30948325f66912f6d747ada9bccea505e7a67cefc9551",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use before merge, deployment, production exposure, skill installation, or security-sensitive changes involving secrets, auth, permissions, inputs, dependencies, supply chain, containers, files, or agent tools.",
+      "id": "relate-security-review",
+      "name": "relate-security-review",
+      "path": "/home/opencode/.config/opencode/skills/relate-security-review/SKILL.md",
+      "sha256": "cc271180076aa3a09d0cf9fc19f4ac6c3656eae594506b091b2c17d410bca4de",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Discover and qualify the minimum necessary task skills from an indexed catalog without loading every SKILL.md into model context; allow no-skill decisions, pinned trust and bounded reconnaissance.",
+      "id": "relate-skill-router",
+      "name": "relate-skill-router",
+      "path": "/data/working/opencode/relate-skills/sources/relate-integrated-b8eb5ee2913d9b3e/relate-skill-router/SKILL.md",
+      "sha256": "90d7a9e84ff824dce8fba83510bb3e825286567d6b9bc982b3492110296772e5",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Prompt engineering for Mercury Decide and Jev 1.14; typed contract, handoff, document, retrieval, routing, evidence, and risk judgments.",
+      "id": "relate-system-one-decisions",
+      "name": "relate-system-one-decisions",
+      "path": "/data/working/opencode/relate-skills/sources/relate-integrated-b8eb5ee2913d9b3e/relate-system-one-decisions/SKILL.md",
+      "sha256": "4a6a18dd32c333bcad0ee74803e5b970859e614f81f5eb25c21fddebd36f190c",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when an approved spec, plan, PRD, or issue must be converted into complete crash-resumable task packets for agents with ordered tasks, validation commands, acceptance criteria, rollback, and docs updates.",
+      "id": "relate-task-packet-generator",
+      "name": "relate-task-packet-generator",
+      "path": "/home/opencode/.config/opencode/skills/relate-task-packet-generator/SKILL.md",
+      "sha256": "8efdda9a3d9ed39e6f9884a09f482ee1d7fdd3b5f17bb26df27df36496cd1655",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "id": "requesting-code-review",
+      "name": "requesting-code-review",
+      "path": "/home/opencode/.config/opencode/skills/requesting-code-review/SKILL.md",
+      "sha256": "1017ccdd5bc61fab67c654cf118cbdb520464b313073a0a6b9a6b9aa647a3ad6",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+      "id": "resolving-merge-conflicts",
+      "name": "resolving-merge-conflicts",
+      "path": "/home/opencode/.config/opencode/skills/resolving-merge-conflicts/SKILL.md",
+      "sha256": "c7c9ba81362a786aac05d2223123bf1bd2f8a99c3243a72882ede9c68bedfb24",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Generate operational runbooks from a service name \u2014 deployment, incident response, maintenance, and rollback workflows. Templated structure customizable per environment. Use when documenting on-call procedures for a new service, standardizing incident response across teams, or producing runbooks before launching to production.",
+      "id": "runbook-generator",
+      "name": "runbook-generator",
+      "path": "/home/opencode/.config/opencode/skills/runbook-generator/SKILL.md",
+      "sha256": "ef426a9b8a04cb766ac002efeaf4907083aff817887c7652c3fbd4258661fa53",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when implementing authentication/authorization, securing user input, or preventing OWASP Top 10 vulnerabilities \u2014 including custom security implementations such as hashing passwords with bcrypt/argon2, sanitizing SQL queries with parameterized statements, configuring CORS/CSP headers, validating input with Zod, and setting up JWT tokens. Invoke for authentication, authorization, input validation, encryption, OWASP Top 10 prevention, secure session management, and security hardening. For pre-built OAuth/SSO integrations or standalone security audits, consider a more specialized skill.",
+      "id": "secure-code-guardian",
+      "name": "secure-code-guardian",
+      "path": "/home/opencode/.config/opencode/skills/secure-code-guardian/SKILL.md",
+      "sha256": "19153a339a499baf6ea7fc684afc535d8b31292af468e5dd008b58b20d29a89c",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services.",
+      "id": "security-and-hardening",
+      "name": "security-and-hardening",
+      "path": "/home/opencode/.config/opencode/skills/security-and-hardening/SKILL.md",
+      "sha256": "8fed058a520281384ed1bbfddbfb3d2b12479459231c67ae0d1f0d765bb52f95",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Identifies security vulnerabilities, generates structured audit reports with severity ratings, and provides actionable remediation guidance. Use when conducting security audits, reviewing code for vulnerabilities, or analyzing infrastructure security. Invoke for SAST scans, penetration testing, DevSecOps practices, cloud security reviews, dependency audits, secrets scanning, or compliance checks. Produces vulnerability reports, prioritized recommendations, and compliance checklists.",
+      "id": "security-reviewer",
+      "name": "security-reviewer",
+      "path": "/home/opencode/.config/opencode/skills/security-reviewer/SKILL.md",
+      "sha256": "e9a96f7be5c52e4c0ee7eec268a2f3bdb16e24ea31620e648bfb95c36e1437d8",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": ">",
+      "id": "ship-gate",
+      "name": "ship-gate",
+      "path": "/home/opencode/.config/opencode/skills/ship-gate/SKILL.md",
+      "sha256": "05f7eee0d78735f3076fc02c732e4c660f55e2f058922e1ef46280a414294fa5",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Prepares production launches. Use when preparing to deploy to production. Use when you need a pre-launch checklist, when setting up monitoring, when planning a staged rollout, or when you need a rollback strategy.",
+      "id": "shipping-and-launch",
+      "name": "shipping-and-launch",
+      "path": "/home/opencode/.config/opencode/skills/shipping-and-launch/SKILL.md",
+      "sha256": "efc70a45ad6435d93f2b3cef16c125ff6d75a2383e49f30056fcba04b27d6e4a",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": ">",
+      "id": "skill-security-auditor",
+      "name": "skill-security-auditor",
+      "path": "/home/opencode/.config/opencode/skills/skill-security-auditor/SKILL.md",
+      "sha256": "8281b2a45e2ab66d21d45910fa47e02158113e319391d51c60215d39090db686",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Validate, test, and score the quality of skills within the claude-skills ecosystem. Comprehensive meta-skill: structure validation, Python script testing (syntax + imports + runtime + output format), multi-dimensional quality scoring with letter grades and tier classification (BASIC/STANDARD/POWERFUL). Use when authoring a new skill, auditing existing skills for tier promotion, setting up pre-commit hooks for skill quality, or integrating skill QA into CI.",
+      "id": "skill-tester",
+      "name": "skill-tester",
+      "path": "/home/opencode/.config/opencode/skills/skill-tester/SKILL.md",
+      "sha256": "a62efa4e6d596e442083543f86a6bfc5724b0d06a4921d9a31bbc1c5d12e23e0",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Grounds every implementation decision in official documentation. Use when you want authoritative, source-cited code free from outdated patterns. Use when building with any framework or library where correctness matters.",
+      "id": "source-driven-development",
+      "name": "source-driven-development",
+      "path": "/home/opencode/.config/opencode/skills/source-driven-development/SKILL.md",
+      "sha256": "b979e7531ea601ed14a090f32a5b135db517c48ab9821c5e8b09efd80f4ff4d8",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea.",
+      "id": "spec-driven-development",
+      "name": "spec-driven-development",
+      "path": "/home/opencode/.config/opencode/skills/spec-driven-development/SKILL.md",
+      "sha256": "386c599468ca483b19337a1022dfb4c00f5541299be1e70fdd7993ea338e7e0e",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Reverse-engineering specialist that extracts specifications from existing codebases. Use when working with legacy or undocumented systems, inherited projects, or old codebases with no documentation. Invoke to map code dependencies, generate API documentation from source, identify undocumented business logic, figure out what code does, or create architecture documentation from implementation. Trigger phrases: reverse engineer, old codebase, no docs, no documentation, figure out how this works, inherited project, legacy analysis, code archaeology, undocumented features.",
+      "id": "spec-miner",
+      "name": "spec-miner",
+      "path": "/home/opencode/.config/opencode/skills/spec-miner/SKILL.md",
+      "sha256": "0deb55afcc6c776497cec782d1590474242a5f6ab70b4db2a4a8ed2b2fe2a6fd",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Defines service level objectives, creates error budget policies, designs incident response procedures, develops capacity models, and produces monitoring configurations and automation scripts for production systems. Use when defining SLIs/SLOs, managing error budgets, building reliable systems at scale, incident management, chaos engineering, toil reduction, or capacity planning.",
+      "id": "sre-engineer",
+      "name": "sre-engineer",
+      "path": "/home/opencode/.config/opencode/skills/sre-engineer/SKILL.md",
+      "sha256": "7d3ff7346b57ae80a345bb32bfde35712639ccff0fbb042ee98d89e905b7796d",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when executing implementation plans with independent tasks in the current session",
+      "id": "subagent-driven-development",
+      "name": "subagent-driven-development",
+      "path": "/home/opencode/.config/opencode/skills/subagent-driven-development/SKILL.md",
+      "sha256": "41ab239a6ad1c487cd839fdac972a8c9cf0f5e90efa59a63f963767864f0df4c",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "id": "systematic-debugging",
+      "name": "systematic-debugging",
+      "path": "/home/opencode/.config/opencode/skills/systematic-debugging/SKILL.md",
+      "sha256": "3b20719eca4f0461cb51a195221320d775dcf03b6859271066a03a5132a6ce7a",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Scan codebases for technical debt, score severity, track trends, and generate prioritized remediation plans. Use when users mention tech debt, code quality, refactoring priority, debt scoring, cleanup sprints, or code health assessment. Also use for legacy code modernization planning and maintenance cost estimation.",
+      "id": "tech-debt-tracker",
+      "name": "tech-debt-tracker",
+      "path": "/home/opencode/.config/opencode/skills/tech-debt-tracker/SKILL.md",
+      "sha256": "8e7492db76ae8bc2827f3e265a2061a8e656c4eac155a37340d13da077f6687e",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when implementing any feature or bugfix, before writing implementation code",
+      "id": "test-driven-development",
+      "name": "test-driven-development",
+      "path": "/home/opencode/.config/opencode/skills/test-driven-development/SKILL.md",
+      "sha256": "b5b4717b8b761cce15a6cfe9022e33fd959e0894c0c39d72c9cb49c23486c10e",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Generates test files, creates mocking strategies, analyzes code coverage, designs test architectures, and produces test plans and defect reports across functional, performance, and security testing disciplines. Use when writing unit tests, integration tests, or E2E tests; creating test strategies or automation frameworks; analyzing coverage gaps; performance testing with k6 or Artillery; security testing with OWASP methods; debugging flaky tests; or working on QA, regression, test automation, quality gates, shift-left testing, or test maintenance.",
+      "id": "test-master",
+      "name": "test-master",
+      "path": "/home/opencode/.config/opencode/skills/test-master/SKILL.md",
+      "sha256": "f16f02c55fcc761bac2e9f31fff2fc47398601b125a3658399b35670271889e9",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Implements advanced TypeScript type systems, creates custom type guards, utility types, and branded types, and configures tRPC for end-to-end type safety. Use when building TypeScript applications requiring advanced generics, conditional or mapped types, discriminated unions, monorepo setup, or full-stack type safety with tRPC.",
+      "id": "typescript-pro",
+      "name": "typescript-pro",
+      "path": "/home/opencode/.config/opencode/skills/typescript-pro/SKILL.md",
+      "sha256": "5f5bc47c167f0485c01a3b5a14b9999141b1e7c54e7775aecf73ad16f114c066",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
+      "id": "using-git-worktrees",
+      "name": "using-git-worktrees",
+      "path": "/home/opencode/.config/opencode/skills/using-git-worktrees/SKILL.md",
+      "sha256": "e2c3ec142e52868a51af246c620cd76ab648dcf27d6900d47e6ffd07159a9794",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when integrating, prompting, testing, or routing Mercury Decide through OpenRouter or Inception, especially for typed classification, scoring, binary probability, confidence gating, or Decisions API failures.",
+      "id": "using-mercury-decide",
+      "name": "using-mercury-decide",
+      "path": "/data/working/opencode/relate-skills/sources/relate-integrated-b8eb5ee2913d9b3e/using-mercury-decide/SKILL.md",
+      "sha256": "c9de87102173d7eb8f1915161afd1653ff3c9853853e34a84efd13bd8e6b93b0",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+      "id": "using-superpowers",
+      "name": "using-superpowers",
+      "path": "/home/opencode/.config/opencode/skills/using-superpowers/SKILL.md",
+      "sha256": "795eb43f24f2b175456e492936dd5640b2362d36c315a0671b4473fe3be70bca",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "id": "verification-before-completion",
+      "name": "verification-before-completion",
+      "path": "/home/opencode/.config/opencode/skills/verification-before-completion/SKILL.md",
+      "sha256": "ea52d15aabaf72bc6b558efe2c126f161b53961090ddcd712000273bfe8c7b6c",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when you have a spec or requirements for a multi-step task, before touching code",
+      "id": "writing-plans",
+      "name": "writing-plans",
+      "path": "/home/opencode/.config/opencode/skills/writing-plans/SKILL.md",
+      "sha256": "272e1af349f5062c28dc282b3e21b220d58d683a7314a10c455b7432ec91d845",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+      "id": "writing-skills",
+      "name": "writing-skills",
+      "path": "/home/opencode/.config/opencode/skills/writing-skills/SKILL.md",
+      "sha256": "6a08f063f5b23bd755c248ac2b600467c1755d189bdeaad0a664702ecea1411d",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    },
+    {
+      "description": "Generate, audit, or optimize standalone prompts for autonomous tasks, bounded agentic loops, unattended work, multi-agent/task workflows, verified handoffs, recovery, and execution-contract acceptance.",
+      "id": "agentic-loop-prompt-architect",
+      "name": "agentic-loop-prompt-architect",
+      "path": "/home/opencode/.config/opencode/skills/agentic-loop-prompt-architect/SKILL.md",
+      "sha256": "eab09db670836bc89297fbaeb8f8fac4200e954605471439c9e96e9d86fab284",
+      "source_root": "/home/opencode/.config/opencode/skills"
+    }
+  ]
+}
