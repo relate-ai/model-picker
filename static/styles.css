@@ -123,6 +123,8 @@ body {
 }
 
 .card {
+  max-width: 100%;
+  overflow-x: hidden;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -168,10 +170,13 @@ body {
 
 .filters {
   display: flex;
+  max-width: 100%;
   gap: .6rem;
   flex-wrap: wrap;
 }
 .filters input, .filters select {
+  max-width: 100%;
+  flex: 1 1 10rem;
   padding: .55rem .7rem;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -182,7 +187,9 @@ body {
 .filters input { min-width: 16rem; }
 
 .table-wrap {
-  overflow: auto;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
   border: 1px solid var(--line);
   border-radius: 12px;
 }
